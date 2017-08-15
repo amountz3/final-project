@@ -1,0 +1,35 @@
+
+ .nav{
+    text-align: right;
+}
+
+h2{
+    font-size: large;
+}
+ .half-left  img {
+  height: auto;
+  width: 100%;
+} 
+ @media (min-width: 481px) {
+  .half-left
+   {
+    overflow: hidden;
+    padding: 0;
+    position: responsive;
+  } 
+  .half-left  > .container
+   {
+    position: absolute;
+    top: 0;
+  }
+  .half-left  > .container { right: 0;}
+  .half-right > .container { left: 0; }
+} 
+
+div{
+    font-family: 'Lora', serif;
+}
+
+button{
+    text-align: right;  
+}
