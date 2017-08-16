@@ -1,35 +1,16 @@
-
- .nav{
-    text-align: right;
-}
-
-h2{
-    font-size: large;
-}
- .half-left  img {
-  height: auto;
-  width: 100%;
-} 
- @media (min-width: 481px) {
-  .half-left
-   {
-    overflow: hidden;
-    padding: 0;
-    position: responsive;
-  } 
-  .half-left  > .container
-   {
-    position: absolute;
-    top: 0;
-  }
-  .half-left  > .container { right: 0;}
-  .half-right > .container { left: 0; }
-} 
-
 div{
     font-family: 'Lora', serif;
 }
 
-button{
-    text-align: right;  
+body{
+
+    background-image: url('https://img0.etsystatic.com/030/0/6387441/il_fullxfull.596579130_3fqy.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left; 
+    background-size: 50% 100%;
+}
+.pic{
+    height: auto;
+    width: 120%;
 }
