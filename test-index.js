@@ -26,7 +26,7 @@ document.getElementById("question").innerHTML = questions[randomNumber].question
 
 var app = angular.module("myApp", []);
 
-app.controller('RedditCtrl', function($scope, RedditFactory){
+app.controller('EventCtrl', function($scope, EventFactory){
 
   RedditFactory.getPosts()
     .then(function(data){
@@ -39,7 +39,7 @@ app.controller('RedditCtrl', function($scope, RedditFactory){
 
 });
 
-app.factory('RedditFactory', function($http){
+app.factory('EventFactory', function($http){
   var postData;
 
   return {
