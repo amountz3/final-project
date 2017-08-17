@@ -9,40 +9,33 @@
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     </head>
 <body>
-<div class="black" ng-app="myApp">
+<div class="black">
 
   <div class="row">
     <div class="col-sm-6">
-   
+
     </div>
       <div class="col-sm-6">
           <ul class="nav justify-content-end">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="index.html">Home</a>
               </li>
             </ul>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-          <div class="text-center" ng-controller="EventCtrl">
-              <h2>Do you like music?</h2>
-                   
-              <button type="button" class="btn btn-outline-dark">Yes</button>
-              <button type="button" class="btn btn-outline-dark">No</button>
+          <div class="text-center" style="width:400px; margin:30% auto;">
+              <h1>{{result.category}}:</h1>
+              <br>
+              <h2>{{result.question}}</h2>
+              <button type="button" class="btn btn-outline-dark">
+                <a href="#result.category">Yes</a></button>
+              <button type="button" class="btn btn-outline-dark"><a href="index">No</a></button>
               </div>
     </div>
   </div>
-    
+
 </div>
-<!-- <script src="public/event.controller.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-<script src="test-index.js"></script>
-<script src="event.factory.js"></script> 
+
+
+
+
 </body>
 </html>
