@@ -1,10 +1,10 @@
-var app = app.module('myApp');
+var app = angular.module("myApp", []);
 
 app.controller('EventCtrl', function($scope, EventFactory){
     
-      EventFactory.getPosts()
+      EventFactory.getAnswers()
         .then(function(data){
-          $scope.redditPosts = data;
+          $scope.Answers = data;
         })
         .catch(function(error){
           $scope.error = 'There was an error getting data!';
