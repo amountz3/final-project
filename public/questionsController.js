@@ -1,11 +1,9 @@
-(function() {
+var app = angular.module('myApp');
 
-  var app = angular.module('myApp', []);
-
-  app.controller('myController', function(){
-    this.randomizer = questions[Math.floor(Math.random()*questions.length)];
-    this.pick = function(){
-      this.randomizer = questions[Math.floor(Math.random()*questions.length)];
+  app.controller('QuestionCtrl', function($scope){
+    $scope.randomizer = questions[Math.floor(Math.random()*questions.length)];
+    $scope.pick = function(){
+      $scope.randomizer = questions[Math.floor(Math.random()*questions.length)];
     };
   });
 
@@ -30,4 +28,4 @@
   {category: "music", question: "Life may have no meaning. Or even worse, it may have a meaning of which I disapprove."}
 ];
 
-})();
+
