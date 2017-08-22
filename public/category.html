@@ -1,5 +1,6 @@
+<div ng-if="!Answers">LOADING...</div>
 <ul>
-        <a href="#{{answer.url}}">
-          <li ng-repeat="answer in Answers | limitTo: 5">{{answer.title}}</li>
-        </a>
-      </ul>
+    <li ng-repeat="answer in Answers | limitTo: 5">
+        <a href="#{{answer.url}}">{{answer.title}}</a>
+    </li>
+</ul>
