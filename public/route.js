@@ -7,11 +7,6 @@ app.config(function($routeProvider, $locationProvider) {
        controller: 'QuestionCtrl'
      })
 
-    .when('/questions',{
-       templateUrl: 'questions.html',
-       controller: 'QuestionCtrl'
-    })
-
     .when('/category',{
         templateUrl: 'category.html',
         controller: 'EventCtrl'
