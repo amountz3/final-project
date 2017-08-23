@@ -12,6 +12,11 @@ app.config(function($routeProvider, $locationProvider) {
         controller: 'EventCtrl'
      })
 
+     .when('/map',{
+        templateUrl: 'map.html',
+        controller: 'MapCtrl'
+     })
+
     .otherwise({
     redirectTo: '/'
 });
