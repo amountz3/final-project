@@ -15,6 +15,11 @@ app.controller("EventCtrl", function($scope, $timeout,$location, EventFactory){
         .catch(function(error){
           $scope.error = "There was an error getting data!";
         });
-      $scope.category = EventFactory.getCategory();
-    });
+
+        $scope.category = EventFactory.getCategory();
+        
+        $scope.reloadPage = function(){window.location.reload.path("/#")};
+
+      });
+
     

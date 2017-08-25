@@ -20,6 +20,7 @@ app.controller('QuestionCtrl', function($scope, $location, $timeout, EventFactor
     $scope.pick = function(){
       $scope.randomizer = questions[Math.floor(Math.random()*questions.length)]
     }
+   
 });
 
 
