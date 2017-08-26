@@ -8,8 +8,9 @@ app.factory('EventFactory', function($http){
   return {
     getAnswers: getAnswers,
     saveCategory: saveCategory,
-    getCategory: getCategory
-    // getSelectedEvent: getSelectedEvent
+    getCategory: getCategory, 
+    saveSelectedEvent: saveSelectedEvent,
+    getSelectedEvent: getSelectedEvent
   };
 
   function saveCategory(category){
@@ -19,10 +20,13 @@ app.factory('EventFactory', function($http){
     return currentCategory;
   }
 
-  // function getSelectedEvent(){
-  //   // selectedEvent = event;
-  //   return selectedEvent;
-  // }
+  function saveSelectedEvent(event){
+    selectedEvent = event;
+  }
+
+  function getSelectedEvent(){
+    return selectedEvent;
+  }
 
   function getAnswers (){
     return $http.get(`api-event?app_key=cMG6K3XWNbCQbjfj&category=${currentCategory}&location=Detroit&date=Future`)

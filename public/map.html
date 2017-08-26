@@ -1,1 +1,6 @@
 <img ng-if="event" ng-src="https://maps.googleapis.com/maps/api/staticmap?center={{event.latitude}},{{event.longitude}}&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:%7C{{event.latitude}},{{event.longitude}}&key=AIzaSyC1Xmstrq2HGnF3--Kn3eWb6ys1RyWeqfM"></img>
+<a href="{{event.url}}">{{event.title}}</a>
+<p>{{event.venue_name}}</p>
+<p>{{event.venue_address}}</p>
+<p>{{event.city_name}},{{event.region_name}}</p>
+<small>{{event.description}}</small>
