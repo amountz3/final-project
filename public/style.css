@@ -14,3 +14,29 @@ body{
     height: auto;
     width: 120%;
 }
+
+/* .logo {
+	text-align: center;
+    padding-top: 140px;
+    position: absolute;
+    width: 100%;
+}
+
+.logo.ng-leave {
+    transition: all ease-out 1s;
+    opacity: 1;
+}
+
+.logo.ng-leave.ng-leave-active {
+    opacity: 0;
+
+}
+
+#one.ng-enter {
+  transition:opacity ease 1s;
+  opacity: 0;
+}
+
+#one.ng-enter.ng-enter-active{
+    opacity: 1;
+} */
