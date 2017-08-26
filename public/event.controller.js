@@ -17,8 +17,15 @@ app.controller("EventCtrl", function($scope, $timeout,$location, EventFactory){
         });
 
         $scope.category = EventFactory.getCategory();
+        // $scope.reloadPage = function(){window.location.reload.path("/#")};
         
-        $scope.reloadPage = function(){window.location.reload.path("/#")};
+        $scope.hide = true;
+        $scope.hidingShowing = function() {
+            $scope.hide = $scope.hide === false;
+          };
+          $scope.hideDescription = true;
+          $scope.hidingShowingDescription = function() {
+              $scope.hideDescription = $scope.hideDescription === false;}
 
       });
 
