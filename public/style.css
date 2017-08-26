@@ -40,3 +40,15 @@ div{
 .content.ng-enter.ng-enter-active{
     opacity: 1;
 }
+
+li {
+    list-style-type: none;
+}
+
+a.title:active {color:#ff0000;}
+a.title:hover {background:#F34A4A;}
+
+.category{
+    width:400px; 
+    margin:30% auto;
+}
