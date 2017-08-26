@@ -2,15 +2,41 @@ div{
     font-family: 'Lora', serif;
 }
 
-body{
+.nav {
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+}
 
+.pic{
     background-image: url('https://img0.etsystatic.com/030/0/6387441/il_fullxfull.596579130_3fqy.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: left; 
-    background-size: 50% 100%;
+    background-position: center; 
+    height: 100vh;
 }
-.pic{
-    height: auto;
-    width: 120%;
+
+.logo {
+	text-align: center;
+    padding-top: 140px;
+    position: absolute;
+    width: 100%;
+}
+
+.logo.ng-leave {
+    transition: all ease-out 1s;
+    opacity: 1;
+}
+
+.logo.ng-leave.ng-leave-active {
+    opacity: 0;
+
+}
+
+.content.ng-enter {
+  transition:opacity ease 1s;
+  opacity: 0;
+}
+
+.content.ng-enter.ng-enter-active{
+    opacity: 1;
 }

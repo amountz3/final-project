@@ -12,6 +12,10 @@ var  questions = [
 ];
 
 app.controller('QuestionCtrl', function($scope, $location, $timeout, EventFactory){
+  $scope.showLogo = true; 
+  $timeout(function(){
+    $scope.showLogo = false;
+  },2000)
     $scope.randomizer = questions[Math.floor(Math.random()*questions.length)];
     $scope.save = function(category){
       EventFactory.saveCategory(category);
@@ -20,6 +24,7 @@ app.controller('QuestionCtrl', function($scope, $location, $timeout, EventFactor
     $scope.pick = function(){
       $scope.randomizer = questions[Math.floor(Math.random()*questions.length)]
     }
+   
 });
 
 
