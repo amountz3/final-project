@@ -61,7 +61,11 @@ a.title:active {color:#ff0000;}
     margin:30% auto;
 }
 
-#map-image {
-  
+#event-info {
+  float:right;
+}
+
+#map-image{
+    overflow:hidden
 }
 
