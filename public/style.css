@@ -40,3 +40,32 @@ div{
 .content.ng-enter.ng-enter-active{
     opacity: 1;
 }
+
+li {
+    list-style-type: none;
+}
+
+#event-info {
+    display: inline-block;
+    overflow: hidden;
+    padding:20px 0px;
+    margin: 0 auto;
+}
+
+a.title:link {text-decoration: none;}
+a.title:hover {background:#F34A4A;}
+a.title:active {color:#ff0000;}
+
+.category{
+    width:400px; 
+    margin:30% auto;
+}
+
+#event-info {
+  float:right;
+}
+
+#map-image{
+    overflow:hidden
+}
+
