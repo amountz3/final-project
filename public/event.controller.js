@@ -2,7 +2,7 @@ var app = angular.module("myApp");
 
 app.controller("EventCtrl", function($scope, $timeout,$location, EventFactory){
   $scope.imageUrls = {
-    'Sports': 'pistons_1024 (1).jpg',
+    'Sports': 'pistons.jpg',
     'Performing Arts': 'fox.jpg',
     'Music': 'filmore.jpg'
   };
