@@ -2,9 +2,9 @@ var app = angular.module("myApp");
 
 app.controller("EventCtrl", function($scope, $timeout,$location, EventFactory){
   $scope.imageUrls = {
-    'Sports': 'https://i.pinimg.com/736x/44/46/3b/44463b544e942d12f396329774e15e0e--detroit-baseball-detroit-michigan.jpg',
-    'Performing Arts': 'http://sponsorship.michiganradio.org/wp-content/uploads/2015/04/Fox-Theatre-1.jpg',
-    'Music': 'http://sponsorship.michiganradio.org/wp-content/uploads/2015/04/Fox-Theatre-1.jpg'
+    'Sports': 'sportPic1.jpg',
+    'Performing Arts': 'FoxTheatre.jpg',
+    'Music': 'music.jpg'
   };
   $scope.saveEvent = function(event){
     EventFactory.saveSelectedEvent(event);
@@ -26,7 +26,7 @@ app.controller("EventCtrl", function($scope, $timeout,$location, EventFactory){
       .replace(/^./, function(str){ return str.toUpperCase(); });
 
     // $scope.reloadPage = function(){window.location.reload.path("/#")};
-        
+
   $scope.hide = true;
   $scope.hidingShowing = function() {
     $scope.hide = $scope.hide === false;
