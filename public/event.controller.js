@@ -2,9 +2,9 @@ var app = angular.module("myApp");
 
 app.controller("EventCtrl", function($scope, $timeout,$location, EventFactory){
   $scope.imageUrls = {
-    'Sports': 'sportPic1.jpg',
-    'Performing Arts': 'FoxTheatre.jpg',
-    'Music': 'music.jpg'
+    'Sports': 'pistons_1024 (1).jpg',
+    'Performing Arts': 'fox.jpg',
+    'Music': 'filmore.jpg'
   };
   $scope.saveEvent = function(event){
     EventFactory.saveSelectedEvent(event);
