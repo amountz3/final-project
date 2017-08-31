@@ -1,5 +1,6 @@
 div{
     font-family: 'Lora', serif;
+    font-size: 20px;
 }
 
 .nav {
@@ -39,4 +40,23 @@ div{
 
 .content.ng-enter.ng-enter-active{
     opacity: 1;
+}
+
+li {
+    list-style-type: none;
+}
+
+a.title:link {text-decoration: none;}
+a.title:hover {background:#F34A4A;}
+a.title:active {color:#ff0000;}
+
+.category{
+    width:400px; 
+    margin:30% auto;
+}
+
+.quest {
+    border-top: 2px solid #F34A4A ;
+    border-bottom: 2px solid #F34A4A ;
+    padding: 80px;
 }

@@ -15,7 +15,7 @@ app.controller('QuestionCtrl', function($scope, $location, $timeout, EventFactor
   $scope.showLogo = true; 
   $timeout(function(){
     $scope.showLogo = false;
-  },2000)
+  },5000)
     $scope.randomizer = questions[Math.floor(Math.random()*questions.length)];
     $scope.save = function(category){
       EventFactory.saveCategory(category);
