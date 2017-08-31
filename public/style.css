@@ -1,5 +1,6 @@
 div{
     font-family: 'Lora', serif;
+    font-size: 20px;
 }
 
 .nav {
@@ -52,4 +53,10 @@ a.title:active {color:#ff0000;}
 .category{
     width:400px; 
     margin:30% auto;
+}
+
+.quest {
+    border-top: 2px solid #F34A4A ;
+    border-bottom: 2px solid #F34A4A ;
+    padding: 80px;
 }
